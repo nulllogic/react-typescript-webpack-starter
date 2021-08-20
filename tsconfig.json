@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
     "outDir": "./built/",
     "module": "esnext",
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,12 +27,5 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
-    "strict": true
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
